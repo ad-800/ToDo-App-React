@@ -3,11 +3,11 @@ import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 import StopWatch from '../components/StopWatch/StopWatch';
+import CheckBox from '../components/CheckBox';
 
 export default function Home() {
 
   const [tasks, setTasks] = useState([]);
-  const [check, setCheck] = useState(false);
 
   const {id} = useParams();
 
@@ -23,11 +23,6 @@ export default function Home() {
   const deleteTask = async(id) => {
     await axios.delete(`http://localhost:8080/task/${id}`);
     loadTasks();
-  }
-
-  const handleChange = () => {
-    setCheck(check => !check);
-    console.log(check);
   }
 
   return (
@@ -48,7 +43,7 @@ export default function Home() {
               tasks.map((task, index) => (
                 <tr>
                   <th scope="row" key={index}>
-                    <input className="form-check-input checkmark" onChange={() => handleChange()} type="checkbox" value="" aria-label="Checkbox for following text input"/>
+                    <CheckBox />
                   </th>
                   <td>{task.name}</td>
                   <td>{task.status}</td>

@@ -1,4 +1,4 @@
-.timer{
+.timer {
 	margin : 3rem 0;
 	width: 100%;
 	display: flex;
@@ -7,12 +7,14 @@
 	align-items: center;
 }
 
-.digits{
+.digits {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 4rem;
 	color: black;
 }
 
-.mili-sec{
-	color: #198754;
+.seconds {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 4rem;
+  color: #198754;
 }
