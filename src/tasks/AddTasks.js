@@ -44,8 +44,8 @@ export default function AddTasks() {
           </div>
 
           <div className="mt-4 d-flex flex-row justify-content-between">
-            <button type='submit' className='btn btn-outline-success'>Submit</button>
             <Link className='btn btn-danger mx-2 align-item-end' to='/'>Cancel</Link>
+            <button type='submit' className='btn btn-success'>Submit</button>
           </div>
           </form>
         </div>

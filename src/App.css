@@ -25,3 +25,12 @@
 .notasks {
   font-weight: bolder;
 }
+
+.trashbutton {
+  color: #E9E3D1;
+  font-size: 17px;
+}
+
+.penbutton {
+  font-size: 17px;
+}

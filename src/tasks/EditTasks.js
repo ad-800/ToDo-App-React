@@ -54,8 +54,8 @@ export default function EditTasks() {
             <input type={"text"} className='form-control' placeholder='Current task status' name='status' value={status} onChange={(e) => onInputChange(e)} />
           </div>
           <div className="mt-4 d-flex flex-row justify-content-between">
-            <button type='submit' className='btn btn-outline-success'>Submit</button>
             <Link className='btn btn-danger mx-2' to='/'>Cancel</Link>
+            <button type='submit' className='btn btn-success'>Submit</button>
           </div>
           </form>
         </div>
