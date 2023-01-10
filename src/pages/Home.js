@@ -56,6 +56,7 @@ export default function Home() {
             }
           </tbody>
         </table>
+        <span className='notasks'>{tasks.length === 0 ? 'Add a task to begin' : null}</span>
       </div>
     </div>
   )
