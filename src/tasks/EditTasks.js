@@ -35,7 +35,7 @@ export default function EditdTasks() {
 
   return (
     <div className='container'>
-      <div className='row'>
+      <div className='row py-5'>
         <div className='col-md-6 offset-md-3 border rounded p-4 mt-2 shadow'>
           <h2 className='text-center m-4'>Edit Task</h2>
 
@@ -53,9 +53,10 @@ export default function EditdTasks() {
             </label>
             <input type={"text"} className='form-control' placeholder='Current task status' name='status' value={status} onChange={(e) => onInputChange(e)} />
           </div>
-
-          <button type='submit' className='btn btn-success'>Submit</button>
-          <Link className='btn btn-outline-danger mx-2' to='/'>Cancel</Link>
+          <div className="mt-4 d-flex flex-row justify-content-between">
+            <button type='submit' className='btn btn-outline-success'>Submit</button>
+            <Link className='btn btn-danger mx-2' to='/'>Cancel</Link>
+          </div>
           </form>
         </div>
       </div>

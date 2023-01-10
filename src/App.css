@@ -1,6 +1,16 @@
+.App {
+  background-color: #E9E3D1;
+  height: 100vh;
+}
+
 .checkmark {
   padding: 10px;
   margin-left: 5px;
+}
+
+.table-heading-green {
+  background-color: #198754;
+  color: white;
 }
 
 .tasktable {

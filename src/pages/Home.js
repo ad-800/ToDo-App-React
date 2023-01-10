@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 
+import StopWatch from '../components/StopWatch/StopWatch';
+
 export default function Home() {
 
   const [tasks, setTasks] = useState([]);
@@ -30,10 +32,11 @@ export default function Home() {
 
   return (
     <div className='container'>
+      <StopWatch />
       <div className='py-5 tasktable'>
         <table className="table border shadow table-hover align-middle">
           <thead>
-            <tr className='table-success'>
+            <tr className='table-heading-green'>
               <th scope="col"></th>
               <th scope="col">Description</th>
               <th scope="col">Status</th>
