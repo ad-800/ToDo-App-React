@@ -20,8 +20,8 @@ const Timer = (props) => {
       };
       const units = getUnits();
       return (
-          <div className='timer' id={props.id}>
-            <span className='digits'>{leftPad(2, units.hr)}:</span>
+          <div className='timer' data-testid='timer' id={props.id}>
+            <span className='digits' data-testid='descendant'>{leftPad(2, units.hr)}:</span>
             <span className='digits'>{leftPad(2, units.min)}:</span>
             <span className='seconds'>{leftPad(2, units.sec)}</span>
           </div>

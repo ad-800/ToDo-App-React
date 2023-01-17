@@ -34,7 +34,7 @@ export default class Stopwatch extends Component {
           <div className='stop-watch'>
             <Timer id="timer" timeElapsed={timeElapsed} />
             <div className='controls'>
-              <button className='btn-timer btn-one' onClick={this.toggle}>
+              <button className='btn-timer btn-one' data-testid='first-button' onClick={this.toggle}>
                 {isRunning ? 'Stop' : 'Start'}
               </button>
               <button className='btn-timer btn-two' onClick={isRunning ? this.lap : this.reset} hidden={(!isRunning && !timeElapsed) || (isRunning || !timeElapsed)}>
