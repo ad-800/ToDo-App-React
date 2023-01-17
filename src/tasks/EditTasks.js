@@ -24,12 +24,12 @@ export default function EditTasks() {
 
   const onSubmit = async(e) => {
     e.preventDefault();
-    await axios.put(`http://localhost:8080/task/${id}`, task);
+    await axios.put(`https://glasshalffullstack--api.herokuapp.com/task/${id}`, task);
     navigate('/');
   }
 
   const loadTask = async() => {
-    const result = await axios.get(`http://localhost:8080/task/${id}`, task);
+    const result = await axios.get(`https://glasshalffullstack--api.herokuapp.com/task/${id}`, task);
     setTask(result.data);
   }
 

@@ -18,7 +18,7 @@ export default function AddTasks() {
 
   const onSubmit = async(e) => {
     e.preventDefault();
-    await axios.post('http://localhost:8080/task', task);
+    await axios.post('https://glasshalffullstack--api.herokuapp.com/task', task);
     navigate('/');
   }
 

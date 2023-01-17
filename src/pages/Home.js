@@ -20,12 +20,12 @@ export default function Home() {
   },[])
 
   const loadTasks = async() => {
-    const results = await axios.get('http://localhost:8080/tasks');
+    const results = await axios.get('https://glasshalffullstack--api.herokuapp.com/tasks');
     setTasks(results.data);
   }
 
   const deleteTask = async(id) => {
-    await axios.delete(`http://localhost:8080/task/${id}`);
+    await axios.delete(`https://glasshalffullstack--api.herokuapp.com/task/${id}`);
     loadTasks();
   }
 
