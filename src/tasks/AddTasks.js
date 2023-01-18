@@ -12,13 +12,16 @@ export default function AddTasks() {
 
   const {name, status} = task;
 
+  const headers = {"Accept":"application/json, text/plain, /",
+                   "Content-Type": "multipart/form-data"}
+
   const onInputChange = (e) => {
     setTask({...task, [e.target.name]:e.target.value})
   }
 
   const onSubmit = async(e) => {
     e.preventDefault();
-    await axios.post('https://glasshalffullstack--api.herokuapp.com/task', task);
+    await axios.post('https://glasshalffullstack--api.herokuapp.com/task', task, {headers: headers});
     navigate('/');
   }
 
